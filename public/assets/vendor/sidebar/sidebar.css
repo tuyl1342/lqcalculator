@@ -1,0 +1,90 @@
+/* Global Styles */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif; /* Atau font lain sesuai preferensi */
+    background-color: #ffffff; /* Latar belakang putih untuk keseluruhan halaman */
+    color: #212529; /* Warna teks gelap untuk kontras yang baik */
+}
+
+/* Ensure the layout fills the viewport */
+body.dashboard-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#header {
+    z-index: 1000;
+    background-color: #ffffff; /* Latar belakang putih untuk header */
+    border-bottom: 1px solid #e0e0e0; /* Garis batas bawah header */
+}
+
+.container-fluid {
+    flex: 1;
+}
+
+#sidebar {
+    background-color: #ffffff; /* Latar belakang putih untuk sidebar */
+    border-right: 1px solid #e0e0e0; /* Garis batas kanan sidebar */
+}
+
+#sidebar .nav-link {
+    padding: 0.75rem 1rem;
+    border-radius: 0.25rem;
+    color: #212529;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+#sidebar .nav-link:hover {
+    background-color: #f8f9fa; /* Latar belakang abu-abu muda saat hover */
+    color: #212529;
+}
+
+#sidebar .nav-link.active {
+    background-color: #007bff; /* Latar belakang biru untuk link aktif */
+    color: #ffffff;
+}
+
+.dropdown-menu {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+}
+
+.dropdown-item {
+    color: #212529;
+}
+
+.dropdown-item:hover {
+    background-color: #f8f9fa;
+    color: #212529;
+}
+
+footer {
+    background-color: #f8f9fa; /* Latar belakang footer */
+    color: #212529;
+    border-top: 1px solid #e0e0e0;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: auto; /* Pastikan footer berada di bawah konten */
+}
+
+/* Scroll Top Button */
+#scroll-top {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    background-color: #007bff;
+    color: #ffffff;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#scroll-top:hover {
+    background-color: #0056b3;
+}
